@@ -17,3 +17,78 @@
     box-sizing: border-box;
 }
 /*=======================================*/
+body{
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'main';
+    padding: 44px 0;
+    height: 100vh;
+}
+main{
+    background-color: var(--grey-800);
+    width:386px;
+    height: 620px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    border-radius: 10px;
+}
+.infos,.links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.infos{
+    align-items: center;
+    color: var(--white);
+    gap: 1.5rem;
+}
+.logo img{
+    width: 92px;
+    border-radius: 50%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.adress{
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+.bio{
+    font-size: var(--paragraphe-fz);
+    font-weight: 300;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-700);
+    color: white;
+    height: 2.8rem;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.link:hover{
+    background-color: var(--green);
+    color: var(--grey-800);
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width:1100px) {
+    body{
+        height: auto;
+        padding: 44px 1rem;
+    }
+}
